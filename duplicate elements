@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,j,n;
+    printf("Enter leghth of array\n");
+    scanf("%d",&n);
+    printf("Enter values of array\n");
+    int a[n];
+    for(i=0;i<n;i++)
+     scanf("%d",&a[i]);
+    printf("The repeated numbers are ");
+    for(i=0;i<n;i++)
+     for(j=n;j>i;j--)
+      if(a[i]==a[j])
+       printf("%d ",a[i]);
+    return 0;
+}
